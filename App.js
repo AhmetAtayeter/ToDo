@@ -37,8 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink'
   },
   view3:{
-    flex:2,
-    backgroundColor: 'purple'
+    flex:2
   },
   text:{
     color: '#FFA500',

@@ -4,9 +4,11 @@ import styles from './addComp.style'
 
 const AddComp = () => {
 
+    const[input,setInput] = useState()
     const [isFocus,setIsFocus] = useState(false)
     
     function onChangeText(){
+        console.log(input)
         setIsFocus(!isFocus)
     }
 
@@ -14,6 +16,7 @@ const AddComp = () => {
         <View style={styles.container}>
             <TextInput
                 placeholder= "Yapılacak..."
+                value={input}
                 placeholderTextColor="#808080"
                 onChangeText={onChangeText}
                 // onBlur={setIsFocus(false)}
